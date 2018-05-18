@@ -63,7 +63,27 @@ apiRoutes.get('/', function(req, res){
     res.status(201).json({ message:"Welcome to expense dairy API"});
 });
 
+apiRoutes.get('/user/:id', user.getuserDetails); // API returns user details
 
+apiRoutes.put('/user/:id', user.updateUser); // API update user details
+
+apiRoutes.put('/password/:id', user.updatePassword); // API updates user password
+
+//expense routes
+
+apiRoutes.post('/expense/:id', expense.saveexpense); // API adds & update expense of the user
+
+apiRoutes.delete('/expense/:id', expense.delexpense); //API removes the expense details of given expense id
+
+apiRoutes.get('/expense/:id', expense.getexpense); // API returns expense details of given expense id
+
+apiRoutes.post('/expense/total/:id', expense.expensetotal); // API returns expense details of given expense id
+
+apiRoutes.post('/expense/report/:id', expense.expensereport); //API returns expense report based on user input
+
+// kick off the server 
+app.listen(port);
+console.log('Expense Dairy is listening at http://localhost:' + port);
 
 
 
