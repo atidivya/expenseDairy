@@ -23,7 +23,17 @@
     "@angular/router": "^5.2.0",
     "core-js": "^2.4.1",
     "rxjs": "^5.5.6",
-    "zone.js": "^0.8.19"
+    "zone.js": "^0.8.19",
+    "jquery": "^3.2.1",
+    "toastr": "^2.1.2",
+    "bootstrap": "^3.3.7",
+    "express": "^4.15.2",
+    "body-parser": "^1.17.1",
+    "morgan": "^1.8.1",
+    "bcrypt-nodejs": "0.0.3",
+    "jsonwebtoken": "^7.3.0",
+    "mongoose": "^4.9.1",
+    "mongoose-paginate": "^5.0.3"
   },
   "devDependencies": {
     "@angular/cli": "~1.7.2",
